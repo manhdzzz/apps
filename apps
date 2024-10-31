@@ -1,13 +1,13 @@
 {
-    "name": "Appstore USigner - by UCerts.io",
+    "name": "Appstore Infi - by Infi.io",
     "identifier": "com.usigner.ucerts",
     "sourceURL": "https://ucerts.io",
     "iconURL": "https://ucerts.io/public/icons/navbar_icon.png",
     "sourceImage": "https://ucerts.io/public/icons/navbar_icon.png",
     "website": "https://ucerts.io",
-    "subtitle": "Appstore By UCerts.io",
+    "subtitle": "Appstore By Manhdeptrai",
     "META": {
-        "repoName": "Appstore By UCerts.io",
+        "repoName": "Appstore By Manhdeptrai",
         "repoIcon": "https://ucerts.io/public/icons/navbar_icon.png"
     },
     "apps": [
