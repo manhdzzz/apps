@@ -1,14 +1,14 @@
 {
     "name": "Appstore Infi - by Infi.io",
-    "identifier": "com.usigner.ucerts",
-    "sourceURL": "https://manhdzzz.github.io/apps/",
-    "iconURL": "https://manhdz/public/icons/navbar_icon.png",
-    "sourceImage": "https://manhdz/public/icons/navbar_icon.png",
-    "website": "https://manhdz",
+    "identifier": "com.infi.com",
+    "sourceURL": "https://manhdzzz.github.io/apps",
+    "iconURL": "https://img.favpng.com/24/19/2/security-hacker-black-hat-computer-icons-png-favpng-TU4tKdg91czdELq7mccAGEis6.jpg",
+    "sourceImage": "https://img.favpng.com/24/19/2/security-hacker-black-hat-computer-icons-png-favpng-TU4tKdg91czdELq7mccAGEis6.jpg",
+    "website": "https://manhdzzz.github.io/apps",
     "subtitle": "Appstore By Manhdeptrai",
     "META": {
         "repoName": "Appstore By Manhdeptrai",
-        "repoIcon": "https://manhdz/public/icons/navbar_icon.png"
+        "repoIcon": "https://img.favpng.com/24/19/2/security-hacker-black-hat-computer-icons-png-favpng-TU4tKdg91czdELq7mccAGEis6.jpg"
     },
     "apps": [
         {
