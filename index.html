@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appstore by Infi.io</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4; /* Màu nền nhẹ */
+        }
+
+        .header-container {
+            text-align: center; /* Căn giữa tất cả phần tử trong header */
+            margin-bottom: 20px; /* Khoảng cách dưới cùng */
+        }
+
+        .header-container img {
+            width: 128px; /* Kích thước logo */
+            height: 128px;
+        }
+
+        .search-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #searchInput {
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px; /* Bo tròn góc nhẹ */
+            border: 1px solid #ccc;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 10px 0; /* Khoảng cách giữa các tiêu đề */
+        }
+
+        h2 {
+            font-weight: bold; /* Đậm chữ */
+            margin: 5px 0;
+        }
+
+        h3 {
+            font-weight: normal; /* Chữ mảnh */
+            margin: 5px 0;
+        }
+
+        .button-black {
+            background-color: black; /* Nền đen */
+            color: white; /* Chữ trắng */
+            padding: 10px 20px; /* Padding cho nút */
+            border: none; /* Xóa đường viền */
+            border-radius: 5px; /* Bo tròn nhẹ */
+            cursor: pointer; /* Con trỏ khi hover */
+            text-decoration: none; /* Xóa gạch chân */
+            display: inline-block; /* Để giữ kích thước nút */
+            margin-top: 10px; /* Khoảng cách với nội dung bên trên */
+            font-weight: bold; /* Làm đậm chữ */
+        }
+
+        .app-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Hiển thị dạng bảng */
+            gap: 20px;
+            justify-items: center; /* Canh giữa nội dung ô */
+        }
+
+        .app-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng mạnh hơn */
+            border-radius: 10px; /* Bo tròn góc nhẹ hơn */
+            text-align: center;
+            background-color: #fff; /* Màu nền trắng */
+            transition: transform 0.2s, box-shadow 0.2s; /* Hiệu ứng khi hover */
+        }
+
+        .app-box:hover {
+            transform: translateY(-5px); /* Nâng lên nhẹ khi hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Đổ bóng tối hơn khi hover */
+        }
+
+        .app-icon {
+            width: 50px; /* Kích thước icon 50x50 */
+            height: 50px;
+            border-radius: 5px; /* Bo tròn nhẹ */
+            margin-bottom: 10px;
+        }
+
+        .app-box h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .app-box p {
+            font-size: 14px;
+            color: #555;
+            white-space: pre-wrap; /* Giữ nguyên định dạng xuống dòng */
+            margin: 5px 0; /* Khoảng cách giữa các dòng */
+            text-align: left; /* Căn lề trái */
+        }
+
+        .download-btn {
+            background-color: #28a745; /* Màu nền nút */
+            color: white; /* Màu chữ nút */
+            padding: 10px 20px; /* Padding cho nút */
+            border: none; /* Xóa đường viền */
+            border-radius: 5px; /* Bo tròn nhẹ */
+            cursor: pointer; /* Con trỏ khi hover */
+            text-decoration: none; /* Xóa gạch chân */
+            display: inline-block; /* Để giữ kích thước nút */
+            margin-top: 10px; /* Khoảng cách với nội dung bên trên */
+            font-weight: bold; /* Làm đậm chữ */
+            transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+        }
+
+        .download-btn:hover {
+            background-color: #218838; /* Màu nền khi hover */
+        }
+
+        .youtube-button {
+            display: flex; /* Sử dụng flexbox cho căn giữa */
+            align-items: center; /* Canh giữa theo chiều dọc */
+            justify-content: center; /* Canh giữa theo chiều ngang */
+            gap: 10px; /* Khoảng cách giữa icon và chữ */
+            border: 2px solid black; /* Viền đen */
+            border-radius: 30px; /* Bo tròn góc */
+            padding: 10px 20px; /* Padding cho nút */
+            background-color: transparent; /* Nền trong suốt */
+            color: black; /* Chữ đen */
+            text-decoration: none; /* Xóa gạch chân */
+            transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu */
+        }
+
+        .youtube-button:hover {
+            background-color: black; /* Nền đen khi hover */
+            color: white; /* Chữ trắng khi hover */
+        }
+
+        .youtube-icon {
+            fill: #ff0909; /* Màu icon YouTube */
+            height: 20px; /* Chiều cao icon */
+            width: 20px; /* Chiều rộng icon */
+        }
+
+        @media (max-width: 768px) {
+            .app-box {
+                flex: 1 1 calc(100% - 20px);
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <img src="https://i.imgur.com/iZ2V4IP.png" alt="UCerts Logo">
+        <h1>Appstore by Infi.io</h1>
+        <h2>Giải pháp chứng chỉ Apple chuyên nghiệp</h2>
+        <h3>Nhân bản ứng dụng trên iOS không cần Jailbreak</h3>
+        <div style="text-align: center;">
+  <a href="https://Infi.io/vi-VN" class="button-black" style="margin-bottom: 20px; display: block;">Mua chứng chỉ tại đây</a>
+<a target="_blank" class="youtube-button" href="https://www.youtube.com/watch?v=6wTpBCrLcDM" style="display: block;">
+    <svg class="youtube-icon" stroke="currentColor" fill="#ff0909" stroke-width="0" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305z"></path>
+        <path fill="#ffffff" d="M232.145 337.591V175.185l142.739 81.205-142.739 81.201z"></path>
+    </svg>
+    <span>Xem video hướng dẫn</span>
+</a>
+
+
+</div>
+
+
+
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm ứng dụng...">
+    </div>
+    
+    <h1>Danh sách ứng dụng</h1>
+    
+    <div class="app-container" id="appContainer"></div>
+
+    <script src="app.js"></script> <!-- Liên kết đến file JavaScript -->
+
+    <footer class="w-full"><div class="mx-auto flex w-full max-w-screen-lg flex-col items-center px-4 py-6"><div class="my-3 h-[1px] w-full bg-neutral-400"></div><div class="flex w-full justify-between gap-3 max-lg:flex-col-reverse"><p class="text-xs text-neutral-700 md:text-sm">Bản quyền © Infi.io 2024. Mọi quyền được bảo lưu.</p><p class="text-neutral-600 md:text-sm lg:text-neutral-500">Việt Nam</p></div><div class="mt-1 flex w-full flex-wrap items-center text-sm text-neutral-600 max-md:text-xs [&amp;>.divider]:mx-2 [&amp;>.divider]:h-4 [&amp;>.divider]:w-[1px] [&amp;>.divider]:bg-neutral-600"><a href="/vi-VN/privacy-policy">Chính sách quyền riêng tư</a><div class="divider"></div><a href="/vi-VN/terms-and-conditions">Điều khoản sử dụng</a><div class="divider"></div><a href="/vi-VN/sale-and-refund">Bán hàng và hoàn tiền</a></div></div></footer>
+</body>
+</html>
