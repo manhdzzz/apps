@@ -314,22 +314,6 @@
             "screenshotURLs": [
                 "https://objstor.basoft.vn/uapps/fanpage_69060b5e87.png"
             ]
-        },
-        {
-            "name": "ShopeeFood - Đối tác Tài xế",
-            "type": 1,
-            "bundleID": "vn.foody.nowpartner",
-            "bundleIdentifier": "vn.foody.nowpartner",
-            "developerName": "Admin UCerts",
-            "version": "3.29.1",
-            "versionDate": "2024-10-16",
-            "downloadURL": "https://github.com/UCerts/LibraryIPA/releases/download/ShopeeFoodPartner_IPA/Shopee.Partner_3.29.1_@UCerts.io_decrypted.ipa",
-            "localizedDescription": "Từ 18.08.2021, Now chính thức đổi tên thành ShopeeFood - ứng dụng phục vụ Khách hàng trong việc đặt món, giao nhận thức ăn tại các thành phố lớn ở Việt... \n• 📚Khả năng Nhân bản: Có thể ✅ \n• 🛠 Tweak: Ứng dụng gốc từ Appstore (KHÔNG MOD) \n• 🌐Website bán chứng chỉ Apple: UCerts.io \n• ⓕ Fanpage Facebook: Facebook.com/UCerts.io \n• ⚠️Lưu ý: Vui lòng sử dụng chứng chỉ Apple từ UCerts.io. Chúng tôi không đảm bảo an toàn cho thiết bị của bạn nếu bạn sử dụng chứng chỉ từ nhà cung cấp khác!",
-            "iconURL": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ff/b6/0a/ffb60aac-55fd-de0b-fbb5-d6217074cd8b/AppIcon-VN-0-0-1x_U007emarketing-0-5-0-0-85-220.png/350x350.png?",
-            "size": 7990000,
-            "screenshotURLs": [
-                "https://objstor.basoft.vn/uapps/fanpage_69060b5e87.png"
-            ]
         }
   ]
 }
