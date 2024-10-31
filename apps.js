@@ -2,13 +2,13 @@
     "name": "Appstore USigner - by MENJMOI",
     "identifier": "com.infi.com",
     "sourceURL": "https://infi.viettei.click",
-    "iconURL": "https://ucerts.io/public/icons/navbar_icon.png",
-    "sourceImage": "https://ucerts.io/public/icons/navbar_icon.png",
-    "website": "https://infi.viettei.click/",
+    "iconURL": "https://img.favpng.com/24/19/2/security-hacker-black-hat-computer-icons-png-favpng-TU4tKdg91czdELq7mccAGEis6.jpg",
+    "sourceImage": "https://img.favpng.com/24/19/2/security-hacker-black-hat-computer-icons-png-favpng-TU4tKdg91czdELq7mccAGEis6.jpg",
+    "website": "https://infi.viettei.click",
     "subtitle": "Appstore By ManhDepTrai",
     "META": {
         "repoName": "Appstore By ManhDepTrai",
-        "repoIcon": "https://ucerts.io/public/icons/navbar_icon.png"
+        "repoIcon": "https://img.favpng.com/24/19/2/security-hacker-black-hat-computer-icons-png-favpng-TU4tKdg91czdELq7mccAGEis6.jpg"
     },
     "apps": [
         {
