@@ -1,7 +1,7 @@
 {
     "name": "Appstore Infi - by Infi.io",
     "identifier": "com.usigner.ucerts",
-    "sourceURL": "https://manhdz",
+    "sourceURL": "https://manhdzzz.github.io/apps/",
     "iconURL": "https://manhdz/public/icons/navbar_icon.png",
     "sourceImage": "https://manhdz/public/icons/navbar_icon.png",
     "website": "https://manhdz",
