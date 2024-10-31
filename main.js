@@ -1,6 +1,6 @@
 async function fetchAppsData() {
     try {
-        const response = await fetch('https://raw.githubusercontent.com/manhdzzz/apps/refs/heads/main/apps');
+        const response = await fetch('https://raw.githubusercontent.com/manhdzzz/apps/refs/heads/main/apps.js');
         const data = await response.json();
 
         const apps = data.apps;
