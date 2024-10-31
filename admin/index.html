@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Store Manager</title>
+</head>
+<body>
+    <h2>Thêm ứng dụng mới vào danh sách</h2>
+    <form id="appForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br><br>
 
+        <label for="bundleID">Bundle ID:</label>
+        <input type="text" id="bundleID" required><br><br>
+
+        <label for="bundleIdentifier">Bundle Identifier:</label>
+        <input type="text" id="bundleIdentifier" required><br><br>
+
+        <label for="version">Version:</label>
+        <input type="text" id="version" required><br><br>
+
+        <label for="versionDate">Version Date:</label>
+        <input type="date" id="versionDate" required><br><br>
+
+        <label for="downloadURL">Download URL:</label>
+        <input type="url" id="downloadURL" required><br><br>
+
+        <label for="iconURL">Icon URL:</label>
+        <input type="url" id="iconURL" required><br><br>
+
+        <label for="size">Size (in bytes):</label>
+        <input type="number" id="size" required><br><br>
+
+        <button type="submit">Add App</button>
+    </form>
+
+    <p id="message"></p>
+
+    <script>
+        document.getElementById('appForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const app = {
+                name: document.getElementById('name').value,
+                type: 1,
+                bundleID: document.getElementById('bundleID').value,
+                bundleIdentifier: document.getElementById('bundleIdentifier').value,
+                developerName: "Admin UCerts",
+                version: document.getElementById('version').value,
+                versionDate: document.getElementById('versionDate').value,
+                downloadURL: document.getElementById('downloadURL').value,
+                localizedDescription: "TikTok là mạng xã hội cực HOT về video nơi mọi người chia sẻ các clip ngắn được truyền cảm hứng bằng âm nhạc. Bất kể là nhảy, múa, phong cách tự do hay...",
+                iconURL: document.getElementById('iconURL').value,
+                size: parseInt(document.getElementById('size').value),
+                screenshotURLs: ["https://objstor.basoft.vn/uapps/fanpage_69060b5e87.png"]
+            };
+
+            // Token GitHub cần có quyền repo (cập nhật với token của bạn)
+            const GITHUB_TOKEN = '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';
+            const REPO_OWNER = 'manhdzzz';
+            const REPO_NAME = 'apps';
+            const FILE_PATH = 'apps';
+
+            try {
+                // Lấy nội dung file hiện tại
+                let response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`, {
+                    headers: {
+                        Authorization: `token ${GITHUB_TOKEN}`
+                    }
+                });
+                
+                if (!response.ok) throw new Error('Could not fetch file');
+                
+                const fileData = await response.json();
+                const content = JSON.parse(atob(fileData.content));
+
+                // Thêm ứng dụng mới vào danh sách apps
+                content.apps.push(app);
+
+                // Cập nhật file JSON
+                const updatedContent = btoa(JSON.stringify(content, null, 2));
+                
+                // Ghi lại file lên GitHub
+                response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`, {
+                    method: 'PUT',
+                    headers: {
+                        Authorization: `token ${GITHUB_TOKEN}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        message: 'Add new app to list',
+                        content: updatedContent,
+                        sha: fileData.sha  // SHA của file hiện tại để xác nhận cập nhật
+                    })
+                });
+
+                if (response.ok) {
+                    document.getElementById('message').textContent = 'App added successfully!';
+                } else {
+                    throw new Error('Failed to update file');
+                }
+            } catch (error) {
+                console.error(error);
+                document.getElementById('message').textContent = 'Error: ' + error.message;
+            }
+        });
+    </script>
+</body>
+</html>
