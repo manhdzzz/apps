@@ -1,7 +1,7 @@
 // Fetch JSON từ GitHub và render ra giao diện
 async function fetchAppsData() {
     try {
-        const response = await fetch('https://repo.upglobal.pro'); // Đường dẫn tới file JSON
+        const response = await fetch('https://repo.upglobal.pro/data.json'); // Đường dẫn tới file JSON
         const data = await response.json();
 
         const apps = data.apps; // Lấy danh sách apps từ JSON
