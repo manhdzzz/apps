@@ -1,6 +1,6 @@
 async function fetchAppsData() {
     try {
-        const response = await fetch('https://repo.upglobal.pro/');
+        const response = await fetch('https://repo.ucerts.io/');
         const data = await response.json();
 
         const apps = data.apps;
