@@ -1,9 +1,9 @@
 {
 "apps": [
         {
-            "name": "Twitch",
+            "name": "Twitch2",
             "type": 1,
-            "bundleIdentifier": "tv.twitch",
+            "bundleIdentifier": "tv.twitch2",
             "version": "21.9",
             "versionDate": "2024-11-22 16:41:08",
             "size": 85878448,
@@ -20,9 +20,9 @@
             "source": "https:\/\/ipa.thuthuatjb.com\/repo"
         },
         {
-            "name": "Twitch",
+            "name": "Twitch3",
             "type": 1,
-            "bundleIdentifier": "tv.twitch",
+            "bundleIdentifier": "tv.twitch3",
             "version": "21.9",
             "versionDate": "2024-11-22 16:41:08",
             "size": 85878448,
