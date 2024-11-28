@@ -1,0 +1,40 @@
+"apps": [
+        {
+            "name": "Twitch",
+            "type": 1,
+            "bundleIdentifier": "tv.twitch",
+            "version": "21.9",
+            "versionDate": "2024-11-22 16:41:08",
+            "size": 85878448,
+            "downloadURL": "https:\/\/github.com\/apptesters-org\/Repo\/releases\/download\/08-11-2024\/Twitch_21.9_AdFree_%40thisismanpreets_apptesters.org.ipa",
+            "developerName": "Admin Upglobal.pro",
+            "localizedDescription": "\ud83e\ude81 L\u01b0u \u00fd : C\u00e1c k\u1ef9 thu\u1eadt \u1ea3o ho\u00e1 m\u00f4i tr\u01b0\u1eddng thi\u1ebft b\u1ecb gi\u00fap s\u1eed d\u1ee5ng song song nhi\u1ec1u \u1ee9ng d\u1ee5ng v\u00e0 m\u1edf kho\u00e1 t\u00ednh n\u0103ng Pro ch\u1ec9 s\u1eed d\u1ee5ng \u1ed5n \u0111\u1ecbnh v\u1edbi quy\u1ec1n \u0111\u01b0\u1ee3c c\u1ea5p t\u1eeb app.UpGlobal.pro\nTr\u00e1nh s\u1eed d\u1ee5ng c\u00e1c ngu\u1ed3n kh\u00e1c d\u1eabn t\u1edbi b\u1ecb kho\u00e1 quy\u1ec1n v\u0129nh vi\u1ec5n.",
+            "iconURL": "https:\/\/raw.githubusercontent.com\/apptesters-org\/Repo\/main\/icons\/tv.twitch.png",
+            "subtitle": "Tham gia nh\u00f3m h\u1ed7 tr\u1ee3 c\u1ee7a TTJB tr\u00ean Telegram\/Facebook \u0111\u1ec3 \u0111\u01b0\u1ee3c tr\u1ee3 gi\u00fap ho\u1eb7c y\u00eau c\u1ea7u \u1ee9ng d\u1ee5ng",
+            "screenshotURLs": [
+                "https:\/\/ipa.thuthuatjb.com\/view\/img\/repo-view.png",
+                "https:\/\/ipa.thuthuatjb.com\/view\/img\/repo-view-2.png",
+                "https:\/\/ipa.thuthuatjb.com\/view\/img\/repo-view-3.png"
+            ],
+            "source": "https:\/\/ipa.thuthuatjb.com\/repo"
+        },
+        {
+            "name": "Twitch",
+            "type": 1,
+            "bundleIdentifier": "tv.twitch",
+            "version": "21.9",
+            "versionDate": "2024-11-22 16:41:08",
+            "size": 85878448,
+            "downloadURL": "https:\/\/github.com\/apptesters-org\/Repo\/releases\/download\/08-11-2024\/Twitch_21.9_AdFree_%40thisismanpreets_apptesters.org.ipa",
+            "developerName": "Admin Upglobal.pro",
+            "localizedDescription": "\ud83e\ude81 L\u01b0u \u00fd : C\u00e1c k\u1ef9 thu\u1eadt \u1ea3o ho\u00e1 m\u00f4i tr\u01b0\u1eddng thi\u1ebft b\u1ecb gi\u00fap s\u1eed d\u1ee5ng song song nhi\u1ec1u \u1ee9ng d\u1ee5ng v\u00e0 m\u1edf kho\u00e1 t\u00ednh n\u0103ng Pro ch\u1ec9 s\u1eed d\u1ee5ng \u1ed5n \u0111\u1ecbnh v\u1edbi quy\u1ec1n \u0111\u01b0\u1ee3c c\u1ea5p t\u1eeb app.UpGlobal.pro\nTr\u00e1nh s\u1eed d\u1ee5ng c\u00e1c ngu\u1ed3n kh\u00e1c d\u1eabn t\u1edbi b\u1ecb kho\u00e1 quy\u1ec1n v\u0129nh vi\u1ec5n.",
+            "iconURL": "https:\/\/raw.githubusercontent.com\/apptesters-org\/Repo\/main\/icons\/tv.twitch.png",
+            "subtitle": "Tham gia nh\u00f3m h\u1ed7 tr\u1ee3 c\u1ee7a TTJB tr\u00ean Telegram\/Facebook \u0111\u1ec3 \u0111\u01b0\u1ee3c tr\u1ee3 gi\u00fap ho\u1eb7c y\u00eau c\u1ea7u \u1ee9ng d\u1ee5ng",
+            "screenshotURLs": [
+                "https:\/\/ipa.thuthuatjb.com\/view\/img\/repo-view.png",
+                "https:\/\/ipa.thuthuatjb.com\/view\/img\/repo-view-2.png",
+                "https:\/\/ipa.thuthuatjb.com\/view\/img\/repo-view-3.png"
+            ],
+            "source": "https:\/\/ipa.thuthuatjb.com\/repo"
+        }
+]
